@@ -1,0 +1,54 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCIE = [
+  {
+    date: 'Actual',
+    title: 'Desarrollador Web',
+    company: 'MEDAC',
+    description:
+      'Desarrollé tanto en el backend como en el frontend con Express, Firebase – Firestore y Angular para la plataforma de feria de empleos de MEDAC. Las funcionalidades para permitir a los visitantes inscribirse en ofertas de trabajo, listarlas y editar su perfil. En el perfil de las empresas, la galería de empresas y sus stands. 🚀',
+    link: ''
+  },
+  {
+    date: '2024 - 2025',
+    title: 'Desarrollador Web',
+    company: 'ENVIDRAPID S.A.S.',
+    description:
+      'Soy responsable tanto del diseño UX/UI como del desarrollo completo de una aplicación web destinada a mejorar la gestión del transporte de carga. Utilicé tecnologías como Node.js y React.js para construir una solución eficiente y escalable.',
+    link: 'https://app.envirapid.com.co/'
+  },
+  {
+    date: '2024',
+    title: 'Desarrollador Web',
+    company: 'Restaurante Bar Salsa',
+    description:
+      'Fui responsable de la creación y desarrollo de su fanpage. Mi rol abarcó el diseño UX/UI y el desarrollo técnico de la página, garantizando una experiencia de usuario atractiva y funcional. Para el desarrollo, utilicé tecnologías y frameworks como Figma y Astro, asegurando una página responsiva y de alto rendimiento.',
+    link: 'https://salsa-restaurante-bar.netlify.app/'
+  },
+  {
+    date: '2022 - 2023',
+    title: 'Ingeniero de Integraciones',
+    company: 'Truora S.A.S.',
+    description:
+      'Comprender la lógica de negocio del cliente para desarrollar e implementar un plan de integración que aborde de manera efectiva las necesidades específicas de su negocio y de las tecnologías utilizadas. Desarrollé una API - Rest para demos de integración, donde se simulaba las APIs de los clientes integrada a los srevicios de Truora.',
+    link: 'https://low-lenora-luisrivas-7f9b906d.koyeb.app/api/docs/'
+  },
+  {
+    date: '2019 - 2022',
+    title: 'Ingeniero Junior de Desarrollo',
+    company: 'INTELLIGENT AGRO S.A.S.',
+    description:
+      'Responsable de Diseñar y desarrollar el prototipo de hardware del equipo de control y monitoreo “EASYGROW” para sistemas de riego. Integrar el equipo “EASYGROW” con la aplicación IoT “EASYGROW-PRO” para el registro de datos y control a través de internet.'
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

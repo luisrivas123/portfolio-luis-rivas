@@ -1,0 +1,48 @@
+---
+const personalImageAlt = 'Luis Rivas'
+import Badge from './Badge.astro'
+import LinkedInIcon from './icons/LinkedIn.astro'
+import MailIcon from './icons/Mail.astro'
+import SocialPill from './SocialPill.astro'
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-24"
+      src="/avatar-cartoon.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/luis-e-rivas-bejarano-20a544141"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, soy Luis Rivas
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Desarrollador Web con habilidades en la <strong
+      >creación de sitios dinámicos y funcionales</strong
+    >. Capaz de traducir diseños creativos en interfaces interactivas y
+    amigables para el usuario.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:rivasbejaranoluis@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/luis-e-rivas-bejarano-20a544141">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
